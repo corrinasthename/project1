@@ -1,9 +1,9 @@
 <h1>Create New</h1>
   <%= form_for @user do |f| %> <!-- Create form for user object -->
     Name: <%= f.text_field :name %> <!-- Create a text field that sends its value under the key name-->
-    Email: <%= f.text_field :email %><!-- Create a text field that sends its value under the key email -->
+    Age: <%= f.number_field :age %><!-- Create a text field that sends its value under the key email -->
     <%= f.submit %> <!-- Create submit button-->
-  <% end %>
+  <% end %><br><br>
+<img src = "http://24.media.tumblr.com/a6a001fbb85667cc031f8bdb1d8fbce9/tumblr_mgzojnX2TT1s3layeo1_500.jpg" width = "200">
 
 
-<p>Find me in app/views/users/new.html.erb</p>

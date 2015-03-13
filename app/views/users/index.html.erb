@@ -1,6 +1,8 @@
 <h1>Users in the Database</h1>
 <% @users.each do |u| %> <!-- Iterates through each user under the variable u -->
-  Name: <p> <%= link_to u.name, user_path(u) %> </p> <!-- Show the users name-->
-  Email : <p> <%= u.email %> </p> <!-- Show the users email -->
+  <br><b><font color = "00ccbb" >Name : </font></b> <%= u.name %> <!-- Show the users name-->
+  <br><font color = "99bb22"><b>Age : </font></b><%= u.age %> <br> <!-- Show the users email -->
 <% end %>
-<%= link_to "new", users_new_path %> <!-- Create a link that appears as "new" that leads to users_new_path -->
+<h2><%= link_to "ENTER A NEW DOG!!!!", dogs_new_path %> <!-- Create a link that appears as "new" that leads to users_new_path -->
+</h2><br>
+<img src = "http://24.media.tumblr.com/a6a001fbb85667cc031f8bdb1d8fbce9/tumblr_mgzojnX2TT1s3layeo1_500.jpg" width = "200">
